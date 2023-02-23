@@ -1,0 +1,9 @@
+.topNav {
+    height: 80px;
+}
+
+.topnav a.split {
+    float: right;
+    background-color: #000;
+    color: white;
+  }
