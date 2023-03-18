@@ -1,3 +1,10 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+
+
 .navbar {
     position: relative;
     display: flex;
@@ -5,9 +12,54 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+
+    font-size: 1.25rem;
+    line-height: inherit;
   }
 
-  
+  .navbar-logo {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  .navbar-nav {
+
+    display: flex;
+
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    margin-bottom: -1px;
+    color: #fff;
+    flex: 1 1 auto;
+    text-align: center;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-light {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
 
 .bg-gray-100 {
     background-color: rgb(243 244 246);
@@ -23,10 +75,29 @@
 
 
 
-  .button {
+button {
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    background-color: rgba(71, 83, 103, 1);
+    color: white;
+    padding: 18px;
+  }
 
+  .btn__contact {
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .button__contact {
+    border-radius: 8px;
+    background-color: rgba(71, 83, 103, 1);
+    color: white;
+    padding: 18px;
+  }
 
+  .font-medium {
+    font-weight: 500;
   }
