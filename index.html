@@ -1,117 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any" />
+    <link rel="icon" href="favicon.png" type="image/png" />
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
-    <link rel="icon" href="favicon.png" type="image/png">
-
-    <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/spacing.css" />
 
     <title>dweiden</title>
-</head>
+  </head>
 
-<body>
+  <body>
 
-    <!-- SECTION: NAVIGATION -->
-    <section class="container col-auto bg-gray-200">
-
-        <nav class="navbar">
-           
-                <a class="navbar-logo" href="#">
-                    <img src="/assets/img/logo.svg" alt="logo">
-                </a>
-
-                <div class="navbar-nav">
-                    <a class="nav-item" href="index.html">Home</a>
-                    <a class="nav-item" href="#portfolio">Portfolio</a>
-                    <a class="nav-item" href="#resume">Resume</a>
-                </div>
-
-                <button class="btn-contact">
-                    <a class="nav-item" href="#">Contact <img src="/assets/img/chevron.svg"></a>
-                    
-                
-                </button>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="assets/img/logo.svg" class="" />
+          </a>
+        </div>
+        <nav>
+          <div class="nav-link">
+              <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#resume">Resume</a></li>
+                <li>
+                  <a class="nav-btn" href="contact.html"><button class="btn">Contact</button></a>
+                </li>
+              </ul>
+          </div>
         </nav>
-
-    </section>
-
+      </header>
 
     <!-- SECTION: HERO -->
-    <section class="hero" id="home"></section>
+    <section class="hero bg-meshgradient-1">
 
-
-    <!-- SECTION: PORTFOLIO -->
-    <section class="container" id="portfolio">
-
-      <div class="row">
-
-        <!-- CARD 1 -->
-        <div class="col-auto">
-            <div class="card shadow-xl">
-                <img src="/assets/img/portfolio.png" class="card-img" alt="">
-                <div class="card-body">
-                    <h5 class="card-subtitle">Development</h3>
-                    <h2 class="card-title">Portfolio Website</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Reiciendis dolore illo facere corporis nihil molestias, sed, illum,
-                        quaerat necessitatibus quo rem at quia consectetur voluptatem cupiditate. Dolor pariatur
-                        inventore sit!</p>
+        <div class="container">
+            <div class="row">
+              <div class="col hero-content">
+                <h1 class="">👋 Hey there, it’s Denis.</h1>
+                <p class="">
+                  UX Design Student <br> 
+                  Genius at 
+                </p>
+              </div>
+              <div class="hero-banner-image">
+                <div class="">
+                  <img src="assets/img/portrait.png" class="" alt="" />
                 </div>
+              </div>
             </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="col-auto">
-            <div class="card shadow-xl h-100">
-                <img src="/assets/img/gardeneer.png" class="card-img" alt="">
-                <div class="card-body">
-                    <h5 class="card-subtitle">Design</h3>
-                    <h2 class="card-title">App Design: Gardeneer</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Reiciendis dolore illo facere corporis nihil molestias, sed, illum,
-                        quaerat necessitatibus quo rem at quia consectetur voluptatem cupiditate. Dolor pariatur
-                        inventore sit!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="col-auto">
-            
-            <div class="card shadow-xl">
-                
-                <img src="/assets/img/koernig.png" class="card-img" alt="">
-                <div class="card-body">
-                    <h5 class="card-subtitle">Design</h3>
-                    <h2 class="card-title">Web Design: Körnig</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Reiciendis dolore illo facere corporis nihil molestias, sed, illum,
-                        quaerat necessitatibus quo rem at quia consectetur voluptatem cupiditate. Dolor pariatur
-                        inventore sit!</p>
-                        
-                </div>
-                
-            </div> 
-            
-      </div>
-
-
+          </div>
     </section>
 
+
+    <!-- PORTFOLIO -->
+    <section class="container port" id="portfolio">
+        <div class="row">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+          <div class="card-list">
+            <!-- CARD 1 -->
+            <div class="card card-animated shadow-xl">
+              <a class="stretched-link" href="/articles/portfolio.html" />
+  
+              <div class="card-header">
+                <img class="card-img" src="assets/img/portfolio.png" />
+              </div>
+              <div class="card-body">
+                <p class="card-subtitle">Development</p>
+                <h4 class="card-title">Portfolio Website</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis dolore illo facere corporis nihil molestias, sed,
+                  illum, quaerat necessitatibus quo rem at quia consectetur
+                  voluptatem cupiditate. Dolor pariatur inventore sit!
+                </p>
+              </div>
+            </div>
+  
+            <!-- CARD 2 -->
+            <div class="card card-animated shadow-xl">
+              <div class="card-header">
+                <img class="card-img" src="assets/img/gardeneer.png" />
+              </div>
+              <div class="card-body">
+                <p class="card-subtitle">Design</p>
+                <h4 class="card-title">App Design: Gardeneer</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis dolore illo facere corporis nihil molestias, sed,
+                  illum, quaerat necessitatibus quo rem at quia consectetur
+                  voluptatem cupiditate. Dolor pariatur inventore sit!
+                </p>
+              </div>
+              <a class="stretched-link" href="/articles/gardeneer.html" />
+            </div>
+  
+            <!-- CARD 3 -->
+            <div class="card card-animated shadow-xl">
+              <a class="stretched-link" href="/articles/koernig.html" />
+              <div class="card-header">
+                <img class="card-img" src="assets/img/koernig.png" />
+              </div>
+              <div class="card-body">
+                <p class="card-subtitle">Design</p>
+                <h4 class="card-title">Web Design: Körnig</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis dolore illo facere corporis nihil molestias, sed,
+                  illum, quaerat necessitatibus quo rem at quia consectetur
+                  voluptatem cupiditate. Dolor pariatur inventore sit!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     <!-- SECTION: RESUME -->
-    <section class="resume" id="resume"></section>
-
-
+    <section class="container " id="resume">
+        <h2>Resume</h2>
+      </section>
+  
+    
     <!-- SECTION: FOOTER -->
-    <section class="footer" id="footer"></section>
-
-
-</body>
-
+    <section class="footer " id="footer">
+        <h2>Footer</h2>
+      </section>
+  </body>
 </html>
