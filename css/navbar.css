@@ -3,7 +3,6 @@ header .navbar {
   justify-content: center;
   padding: 0px 50px;
   box-shadow: 0 1px 8px #ddd;
-
 }
 
 header a {
@@ -21,10 +20,6 @@ header a:hover {
   flex-direction: row;
   /* position: sticky;  */
   align-items: center;
-
-  /* width: 100%;
-  max-width: 1170px; */
-
   margin-right: auto;
   margin-left: auto;
 
@@ -38,7 +33,6 @@ header a:hover {
   margin-right: auto;
   padding-top: 0;
   padding-bottom: 0;
-  
 }
 
 .nav-logo img {
@@ -53,16 +47,18 @@ header a:hover {
 }
 
 .nav-btn {
-/*   padding-left: 1.25rem; */
+  /*   padding-left: 1.25rem; */
 }
 
 @media (max-width: 430px) {
   .navbar {
     max-width: 430px;
   }
+
   nav {
     max-width: 297px;
   }
+
   .nav-link li {
     /*  padding-right: 1.25rem !important; */
     padding-left: 1rem !important;
@@ -70,14 +66,6 @@ header a:hover {
     list-style: none;
   }
 }
-
-/* @media (max-width: 575.99px) {
-  .nav-link li {
-    padding-left: 1.25rem !important;
-    display: inline-block;
-    list-style: none;
-  }
-} */
 
 @media (min-width: 576px) {
   .navbar {
