@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    scroll-behavior: smooth;
+}
+
 .heroGradient {
     background-color: #fff;
     background-image:
@@ -104,4 +108,23 @@
     transform: rotate(-45deg);
     transform: translateY(6px) translate(-6px);
 
+}
+
+@layer components {
+    .card {
+        @apply rounded-lg shadow-lg;
+    }
+}
+
+.card {
+transition: 0.3s all ease-in-out;
+}
+
+.card::before {
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+    background: #F2F4F7;
 }
