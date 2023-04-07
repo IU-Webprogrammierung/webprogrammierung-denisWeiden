@@ -11,10 +11,13 @@ module.exports = {
     extend: {
       colors: {
         primaryColor: '#475467',
-        customBlack: '#101828'
+        customBlack: '#101828',
+        resume: '#F9FAFB'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 
