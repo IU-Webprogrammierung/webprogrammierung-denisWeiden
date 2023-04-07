@@ -8,10 +8,8 @@
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" sizes="any" />
     <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
 
-    <link rel="stylesheet" href="/css/grid.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+
     <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/spacing.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -23,39 +21,53 @@
 
     <!-- NAVIGATION -->
 
-    <nav class="relative container mx-auto p-6">
-        <div class="flex items-center justify-between">
-          <div class="pt-2">
-            <img src="assets/img/logo.svg" alt="">
-          </div>
+<nav class="relative container mx-auto py-6 px-20">
+    <div class="flex items-center justify-between">
+      <div class="pt-2">
+        <img src="../assets/img/logo.svg" alt="" />
+      </div>
   
-          <div class="hidden md:flex space-x-8">
-            <a href="index.html" class="text-primaryColor hover:text-slate-500">Home</a>
-            <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
-            <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
-          </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="../index.html" class="text-primaryColor hover:text-slate-500"
+          >Home</a
+        >
+        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500"
+          >Portfolio</a
+        >
+        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500"
+          >Resume</a
+        >
+      </div>
   
-          <a href="contact.html" class="hidden md:block p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500">Contact</a>
+      <a
+        href="../contact.html"
+        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href focus:scale-95 transition-all duration-200 ease-out after:content-['_↗']"
+        >Contact</a
+      >
   
-          <!-- HAMBURGER ICON -->
-          <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
+      <!-- HAMBURGER ICON -->
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
   
-        </div>
-  
-        <!-- MOBILE MENU -->
-        <div class="md:hidden">
-          <div id="menu" class="absolute flex-col items-center hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-            <a href="index.html">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#resume">Resume</a>
-  
-          </div>
-        </div>
-      </nav>
+    <!-- MOBILE MENU -->
+    <div class="md:hidden">
+      <div
+        id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+      >
+        <a href="../index.html">Home</a>
+        <a href="../index.html#portfolio">Portfolio</a>
+        <a href="../index.html#resume">Resume</a>
+      </div>
+    </div>
+  </nav>
 
 
     <!-- SECTION: CONTACT FORM -->
