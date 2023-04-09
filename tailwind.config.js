@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         primaryColor: '#475467',
         customBlack: '#101828',
+        label: '#344054',
         resume: '#F9FAFB'
       }
     },
