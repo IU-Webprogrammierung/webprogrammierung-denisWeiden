@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" sizes="any" />
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+      
+        <link rel="stylesheet" href="/css/navbar.css" />
+        <link rel="stylesheet" href="/css/resume.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+      
+        <title>dweiden</title>
+      </head>
+<body>
+    
+  <!-- NAVIGATION -->
+
+  <nav class="relative container mx-auto py-6 px-20">
+    <div class="flex items-center justify-between">
+      <div class="pt-2">
+        <a href="../index.html"><img src="assets/img/logo.svg" alt="" /></a>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-primaryColor hover:text-slate-500">Home</a>
+        <a href="#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
+        <a href="#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
+      </div>
+
+      <a href="contact.html"
+        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
+
+      <!-- HAMBURGER ICON -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="index.html">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
