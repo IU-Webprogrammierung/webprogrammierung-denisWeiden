@@ -1,144 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" class="scroll-smooth">
 
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/assets/img/favicon.svg"
-      sizes="any"
-    />
-    <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--     <link rel="stylesheet" href="/css/grid.css" /> -->
-    <!--     <link rel="stylesheet" href="/css/styles.css" /> -->
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/resume.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" sizes="any" />
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    <title>dweiden</title>
-  </head>
+  <!--     <link rel="stylesheet" href="/css/grid.css" /> -->
+  <!--     <link rel="stylesheet" href="/css/styles.css" /> -->
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/resume.css" />
+  <link rel="stylesheet" href="/css/main.css" />
 
-  <body>
-    <!-- NAVIGATION -->
+  <title>dweiden</title>
+</head>
 
-    <nav class="relative container mx-auto py-6 px-20">
-      <div class="flex items-center justify-between">
-        <div class="pt-2">
-          <img src="assets/img/logo.svg" alt="" />
-        </div>
+<body>
+  <!-- NAVIGATION -->
 
-        <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="text-primaryColor hover:text-slate-500"
-            >Home</a
-          >
-          <a href="#portfolio" class="text-primaryColor hover:text-slate-500"
-            >Portfolio</a
-          >
-          <a href="#resume" class="text-primaryColor hover:text-slate-500"
-            >Resume</a
-          >
-        </div>
-
-        <a
-          href="contact.html"
-          class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href focus:scale-95 transition-all duration-200 ease-out after:content-['_↗']"
-          >Contact</a
-        >
-
-        <!-- HAMBURGER ICON -->
-        <button
-          id="menu-btn"
-          class="block hamburger md:hidden focus:outline-none"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
+  <nav class="relative container mx-auto py-6 px-20">
+    <div class="flex items-center justify-between">
+      <div class="pt-2">
+        <a href="../index.html"><img src="assets/img/logo.svg" alt="" /></a>
       </div>
 
-      <!-- MOBILE MENU -->
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="index.html">Home</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#resume">Resume</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-primaryColor hover:text-slate-500">Home</a>
+        <a href="#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
+        <a href="#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
+      </div>
+
+      <a href="contact.html"
+        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
+
+      <!-- HAMBURGER ICON -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="index.html">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION: HERO -->
+
+  <section id="hero">
+    <div class="container flex flex-col items-center mx-auto pt-20 mb-10 md:space-y-0 md:flex-row xs:px-0 md:px-20">
+      <!-- LEFT ITEM-->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center text-customBlack md:text-5xl md:text-left">
+          👋 Hey there, it’s Denis.
+        </h1>
+        <p class="text-primaryColor max-w-sm text-center md:text-left">
+          UX Design Student & Genius at 
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <a href="contact.html"
+            class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
         </div>
       </div>
-    </nav>
 
-    <!-- SECTION: HERO -->
-
-    <section id="hero">
-      <div
-        class="container flex flex-col items-center px-20 mx-auto sm:pt-20 mb-10 md:space-y-0 md:flex-row"
-      >
-        <!-- LEFT ITEM-->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-          <h1
-            class="max-w-md text-4xl font-bold text-center text-customBlack md:text-5xl md:text-left"
-          >
-            👋 Hey there, it’s Denis.
-          </h1>
-          <p class="text-primaryColor max-w-sm text-center md:text-left">
-            UX Design Student & Genius at 
-          </p>
-          <div class="flex justify-center md:justify-start">
-            <a
-              href="contact.html"
-              class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href focus:scale-95 transition-all duration-200 ease-out after:content-['_↗']"
-              >Contact</a
-            >
-          </div>
-        </div>
-
-        <!-- RIGHT ITEM: IMAGE -->
-        <div class="md:w-1/2">
-          <img src="assets/img/portrait.png" alt="" />
-        </div>
+      <!-- RIGHT ITEM: IMAGE -->
+      <div class="md:w-1/2">
+        <img src="assets/img/portrait.png" alt="" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SECTION: PORTFOLIO -->
+  <!-- SECTION: PORTFOLIO -->
 
-<section id="portfolio">
-  <div class="container px-20 mx-auto">
-    <h2 class="text-3xl text-center text-customBlack mb-11 md:text-4xl md:text-left">Portfolio</h2>
-  </div>
+  <section class="" id="portfolio">
+    <div class="container mx-auto xs:px-0 md:px-20">
+      <h2 class="text-3xl text-left text-customBlack mb-11 md:text-4xl">Portfolio</h2>
+    </div>
 
-      <div
-      class="container flex items-center justify-center min-h-screen px-20 mx-auto mb-20"
-      id="portfolio"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="container flex mx-auto mb-20 xs:px-0 md:px-20" id="portfolio">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         <!-- CARD 1 -->
 
         <div class="card">
           <div class="flex flex-col p-5">
-            <div class="rounded-lg overflow-hidden">
-              <img src="assets/img/portfolio.png" alt="" />
+            <div class="rounded-lg overflow-hidden h-60">
+              <img class="w-full  h-full" src="../assets/img/portfolio/thumbnailPortfolio.png" alt="" />
             </div>
-            <p
-              class="mt-4 font-semibold text-orange-400 text-sm rounded-full bg-slate-100 p-1"
-            >
+            <p class="mt-4 font-semibold text-orange-400 text-sm rounded-full">
               Development
             </p>
             <h4 class="mt-3 text-2xl">Portfolio Website</h4>
             <p class="text-primaryColor text-base mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              voluptatum unde quis molestiae harum, veniam.
+              Designing a Professional Portfolio Website using Figma, VS Code and CSS Frameworks.
             </p>
-            <a
-              href="../blog/portfolio.html"
-              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 focus:scale-95 transition-all duration-200 ease-out"
-              >More</a
-            >
+            <a href="../blog/portfolio.html"
+              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 duration-200 ease-out">More</a>
           </div>
         </div>
 
@@ -146,12 +113,10 @@
 
         <div class="card">
           <div class="flex flex-col p-5">
-            <div class="rounded-lg overflow-hidden">
-              <img src="assets/img/gardeneer.png" alt="" />
+            <div class="rounded-lg overflow-hidden h-60">
+              <img class="w-fit h-fit" src="../assets/img/gardeneer/thumbnailGardeneer.png" alt="" />
             </div>
-            <p
-              class="mt-4 font-semibold text-blue-400 text-sm rounded-full bg-slate-100 p-1"
-            >
+            <p class="mt-4 font-semibold text-blue-400 text-sm rounded-full">
               Design
             </p>
             <h4 class="mt-3 text-2xl">App Design: Gardeneer</h4>
@@ -159,11 +124,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               voluptatum unde quis molestiae harum, veniam.
             </p>
-            <a
-              href="../blog/gardeneer.html"
-              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 focus:scale-95 transition-all duration-200 ease-out"
-              >More</a
-            >
+            <a href="../blog/gardeneer.html"
+              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 duration-200 ease-out">More</a>
           </div>
         </div>
 
@@ -172,11 +134,9 @@
         <div class="card">
           <div class="flex flex-col p-5">
             <div class="rounded-lg overflow-hidden">
-              <img src="assets/img/koernig.png" alt="" />
+              <img class="w-full" src="../assets/img/koernig/thumbnailKoernig.png" alt="" />
             </div>
-            <p
-              class="mt-4 font-semibold text-blue-400 text-sm rounded-full bg-slate-100 p-1"
-            >
+            <p class="mt-4 font-semibold text-blue-400 text-sm rounded-full bg-slate-100 p-1">
               Design
             </p>
             <h4 class="mt-3 text-2xl">Web Design: Körnig</h4>
@@ -184,125 +144,125 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               voluptatum unde quis molestiae harum, veniam.
             </p>
-            <a
-              href="../blog/koernig.html"
-              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 focus:scale-95 transition-all duration-200 ease-out"
-              >More</a
-            >
+            <a href="../blog/koernig.html"
+              class="text-center font-semibold bg-primaryColor text-white py-2 rounded-lg mt-4 hover:bg-slate-500 duration-200 ease-out">More</a>
           </div>
         </div>
       </div>
+  </section>
 
 
-</section>
+  <!-- SECTION: RESUME -->
+  <section class="" id="resume">
+    <div class="container mx-auto xs:px-0 md:px-20">
+      <h2 class="text-3xl text-left text-customBlack mb-11 md:text-4xl">Resume</h2>
+    </div>
+    <div class="container flex items-center justify-center mx-auto mb-20 xs:px-0 md:px-20">
+      <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8  bg-resume w-full rounded-lg shadow-lg">
 
+        <!-- WORK 1 -->
 
-
-    <!-- SECTION: RESUME -->
-    <section class="" id="resume">
-      <div class="container px-20 mx-auto ">
-        <h2 class="text-3xl text-center text-customBlack mb-11 md:text-4xl md:text-left">Resumrere</h2>
-      </div>
-      <div
-        class="relative container flex items-center justify-center min-h-screen mx-auto mb-20"
-        id="resume"
-      >
-        <div class="grid md:grid-cols-2 gap-8 bg-resume">
-          <!-- md:grid-cols-2 lg:grid-cols-3  -->
-
-          <!-- WORK 1 -->
-
-          <div class="">
-            <div class="flex flex-col p-5">
-              <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
-                Work experience
-              </h4>
-              <div class="list">
-                <ul class="job">
-                  <li class="company text-xl text-customBlack">
-                    Apple Retail Germany B.V. & Co. KG
-                  </li>
-                  <li class="job-title text-primaryColor">
-                    Genius & Technical Advisor
-                  </li>
-                  <li class="pb-8 text-primaryColor">October 2016 - today</li>
-                </ul>
-                <ul>
-                  <li class="company">Apple Retail Germany B.V. & Co. KG</li>
-                  <li class="job-title text-primaryColor">Genius Admin</li>
-                  <li class="duration text-primaryColor">
-                    April 2015 - October 2016
-                  </li>
-                </ul>
-                <ul>
-                  <li class="company">Apple Retail Germany B.V. & Co. KG</li>
-                  <li class="job-title text-primaryColor">
-                    Technical Specialist
-                  </li>
-                  <li class="duration text-primaryColor">
-                    February 2014 - March 2015
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- EDUCATION 2 -->
-
-          <div class="flex flex-col p-5">
-            <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
-              Education
-            </h4>
-            <div class="list">
-              <ul class="job">
-                <li class="company text-xl text-customBlack">
-                  IU International University
-                </li>
-                <li class="job-title text-primaryColor">
-                  BA • User Experience Design
-                </li>
-                <li class="duration text-primaryColor">2020 - today</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- SKILLS 3 -->
-
-          <div class="flex flex-col p-5">
-            <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
-              Skills
-            </h4>
-            <div class="list">
-              <ul class="job text-customBlack">
-                <li class="pb-2">Wireframing</li>
-                <li class="pb-2">UI prototyping</li>
-                <li class="pb-2">HTML, CSS</li>
-                <li class="pb-2">Foundations of UX Design (Google)</li>
-                <li class="pb-2">Apple Certified Mac Technician (ACMT)</li>
-                <li class="pb-2">Apple Certified iOS Technician (ACiT)</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- TOOLS 4 -->
-
-          <div class="p-5">
-            <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
-              Tools
-            </h4>
-            <div class="pb-11">
-              <ul class="inline-flex gap-8 text-customBlack">
-                <li class=""><img src="assets/icons/figma.svg" class="" /></li>
-                <li class=""><img src="assets/icons/notion.svg" class="" /></li>
-                <li class=""><img src="assets/icons/slack.svg" class="" /></li>
-                <li class=""><img src="assets/icons/vscode.svg" class="" /></li>
-              </ul>
-            </div>
+        <div class="flex flex-col p-5">
+          <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
+            Work experience
+          </h4>
+          <div class="list">
+            <ul class="job">
+              <li class="text-xl font-medium text-customBlack">
+                Apple Retail Germany B.V. & Co. KG
+              </li>
+              <li class="job-title text-primaryColor">
+                Genius & Technical Advisor
+              </li>
+              <li class="pb-8 text-primaryColor">October 2016 - today</li>
+            </ul>
+            <ul>
+              <li class="text-xl font-medium text-customBlack">Apple Retail Germany B.V. & Co. KG</li>
+              <li class="job-title text-primaryColor">Genius Admin</li>
+              <li class="pb-8 text-primaryColor">
+                April 2015 - October 2016
+              </li>
+            </ul>
+            <ul>
+              <li class="text-xl font-medium text-customBlack">Apple Retail Germany B.V. & Co. KG</li>
+              <li class="job-title text-primaryColor">
+                Technical Specialist
+              </li>
+              <li class="pb-8 text-primaryColor">
+                February 2014 - March 2015
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <script src="js/hamburger.js"></script>
-  </body>
+
+        <!-- EDUCATION 2 -->
+
+        <div class="flex flex-col p-5">
+          <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
+            Education
+          </h4>
+          <div class="list">
+            <ul class="job">
+              <li class="text-xl font-medium text-customBlack">
+                IU International University
+              </li>
+              <li class="job-title text-primaryColor">
+                BA • User Experience Design
+              </li>
+              <li class="pb-8 text-primaryColor">2020 - today</li>
+            </ul>
+            <ul class="job">
+              <li class="text-xl font-medium text-customBlack">
+                Apprenticeship IT-Systems Specialist
+              </li>
+              <li class="job-title text-primaryColor">
+                WA Media GmbH
+              </li>
+              <li class="pb-8 text-primaryColor">August 2011 - January 2014</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SKILLS 3 -->
+
+        <div class="flex flex-col p-5">
+          <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
+            Skills
+          </h4>
+          <div class="list">
+            <ul class="job text-customBlack">
+              <li class="pb-2">Wireframing</li>
+              <li class="pb-2">UI prototyping</li>
+              <li class="pb-2">HTML, CSS</li>
+              <li class="pb-2">Foundations of UX Design (Google)</li>
+              <li class="pb-2">Apple Certified Mac Technician (ACMT)</li>
+              <li class="pb-2">Apple Certified iOS Technician (ACiT)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TOOLS 4 -->
+
+        <div class="p-5">
+          <h4 class="mb-11 pb-11 text-3xl border-b-2 text-primaryColor">
+            Tools
+          </h4>
+          <div class="pb-11">
+            <ul class="inline-flex gap-8 text-customBlack">
+              <li class=""><img src="assets/icons/figma.svg" class="" /></li>
+              <li class=""><img src="assets/icons/notion.svg" class="" /></li>
+              <li class=""><img src="assets/icons/slack.svg" class="" /></li>
+              <li class=""><img src="assets/icons/vscode.svg" class="" /></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="js/hamburger.js" />
+</body>
+
 </html>
