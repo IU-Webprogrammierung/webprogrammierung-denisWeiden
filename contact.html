@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" sizes="any" />
-    <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" sizes="any" />
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/form.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <!--   <link rel="stylesheet" href="/css/form.css" /> -->
+  <link rel="stylesheet" href="/css/main.css" />
 
+  <title>dweiden</title>
+</head>
 
-    <title>dweiden</title>
-  </head>
+<body>
+  <!-- NAVIGATION -->
 
-  <body>
-
-    <!-- NAVIGATION -->
-
-<nav class="relative container mx-auto py-6 px-20">
+  <nav class="container relative mx-auto px-20 py-6">
     <div class="flex items-center justify-between">
       <div class="pt-2">
-        <img src="../assets/img/logo.svg" alt="" />
+        <a href="../index.html"><img src="assets/img/logo.svg" alt="" /></a>
       </div>
-  
-      <div class="hidden md:flex space-x-8">
-        <a href="../index.html" class="text-primaryColor hover:text-slate-500"
-          >Home</a
-        >
-        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500"
-          >Portfolio</a
-        >
-        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500"
-          >Resume</a
-        >
+
+      <div class="hidden space-x-8 md:flex">
+        <a href="../index.html" class="text-primaryColor hover:text-slate-400">Home</a>
+        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-400">Portfolio</a>
+        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-400">Resume</a>
       </div>
-  
-      <a
-        href="../contact.html"
-        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href focus:scale-95 transition-all duration-200 ease-out after:content-['_↗']"
-        >Contact</a
-      >
-  
+
+      <a href="../contact.html"
+        class="baseline href rounded-lg bg-primaryColor p-3 px-6 text-white duration-200 ease-out after:content-['_↗'] hover:bg-slate-400">Contact</a>
+
       <!-- HAMBURGER ICON -->
-      <button
-        id="menu-btn"
-        class="block hamburger md:hidden focus:outline-none"
-      >
+      <button id="menu-btn" class="hamburger block focus:outline-none md:hidden">
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
         <span class="hamburger-bottom"></span>
       </button>
     </div>
-  
+
     <!-- MOBILE MENU -->
     <div class="md:hidden">
-      <div
-        id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-      >
+      <div id="menu"
+        class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center">
         <a href="../index.html">Home</a>
         <a href="../index.html#portfolio">Portfolio</a>
         <a href="../index.html#resume">Resume</a>
@@ -69,85 +54,87 @@
     </div>
   </nav>
 
+  <!-- SECTION: CONTACT FORM -->
 
-    <!-- SECTION: CONTACT FORM -->
-
-
-
-
-
-
-
-    
-    <section class="container header">
-        <div class="col-header">
-            <div class="content-header">
-                <div class="heading">
-                    <div class="titleandsub">
-                        <span class="subtitle">
-                            <p>Contact</p>
-                        </span>
-                        <span class="title">
-                            <p>Get in touch</p>
-                        </span>
-                    </div>
-
-                    <span class="support">
-                        <p>I’d love to hear from you. Please fill out this form.</p> 
-                    </span>
-                </div>
+  <section class="flex justify-center">
+    <div class="px-6 py-24 sm:py-32 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="font-semibold text-blue-400">Contact</p>
+        <h2 class="my-8 text-3xl font-semibold text-customBlack sm:text-4xl">
+          Get in touch
+        </h2>
+        <p class="mt-2 text-lg font-light leading-8 text-label">
+          I’d love to hear from you. Please fill out this form.
+        </p>
+      </div>
+      <form action="#" method="#" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label for="first-name" class="block text-sm font-medium leading-6 text-label">First name</label>
+            <div class="mt-2.5">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                class="block w-full rounded-lg border-0 px-3 py-2 text-customBlack shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6"
+                placeholder="First" required />
             </div>
+          </div>
+          <div>
+            <label for="last-name" class="block text-sm font-medium leading-6 text-label">Last name</label>
+            <div class="mt-2.5">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                class="block w-full rounded-lg border-0 px-3 py-2 text-customBlack shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6"
+                placeholder="Last" required />
+            </div>
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-sm font-medium leading-6 text-label">Email</label>
+            <div class="mt-2.5">
+              <input type="email" name="email" id="email" autocomplete="email" placeholder="you@email.com" required
+                class="block w-full rounded-lg border-0 px-3 py-2 text-customBlack shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="phone-number" class="block text-sm font-medium leading-6 text-label">Phone number</label>
+            <div class="relative mt-2.5">
+              <div class="absolute inset-y-0 left-0 flex items-center">
+                <label for="country" class="sr-only">Country</label>
+                <select id="country" name="country"
+                  class="h-full rounded-lg border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm">
+                  <option>+49</option>
+                  <option>+43</option>
+                  <option>+1</option>
+                </select>
+              </div>
+              <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
+                class="block w-full rounded-lg border-0 px-3 py-2 pl-20 text-customBlack shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6"
+                placeholder="123 12345678" required />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-sm font-medium leading-6 text-label">Message</label>
+            <div class="mt-2.5">
+              <textarea name="message" id="message" rows="4"
+                class="block w-full rounded-lg border-0 px-3 py-2 text-customBlack shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6"
+                placeholder="Message" required></textarea>
+            </div>
+          </div>
+          <div class="flex gap-x-4 sm:col-span-2">
+            <input
+              class="h-5 w-5 rounded-md border-0 text-primaryColor shadow-sm ring-1 ring-gray-300 focus:ring-blue-400"
+              type="checkbox" required />
+            <label>I agree to <a class="" href="#"><u>privacy policy</u></a>.</label>
+          </div>
         </div>
-    </section>
-
-<section class="container form">
-        <div class="col-form">
-            <div class="row-name">
-                <div class="name">
-                    <label>First Name</label>
-                    <input type="text" class="first" placeholder="First Name" required>
-                </div>
-                <div class="name">
-                    <label>Last Name</label>
-                    <input type="text" class="first" placeholder="Last Name" required>
-                </div>
-            </div>
-            
-            <div class="row-mail">
-                <div class="mail">
-                    <label>Email</label>
-                    <input type="email" placeholder="you@email.com" required>
-                </div>
-            </div>
-            
-            <div class="row-phone">
-                <div class="phone">
-                    <label>Phone Number</label>
-                    <input type="number" placeholder="+49 12300000000" required>
-                </div>
-            </div>
-            
-            <div class="row-message">
-                <div class="message">
-                    <label>Message</label>
-                    <input type="text" placeholder="Message" required>
-                </div>
-            </div>
-            
-            <div class="row-privacy">
-                <div class="privacy">
-                    <input type="checkbox" required></input>
-                    <label>I agree to <a class="" href="#"><u>privacy policy</u></a>.</label>
-                </div>
-            </div>
-
-            <div class="row-send">
-                <div class="send">
-                    <input class="btn" type="submit" name="submit" value="Send message" id="submit" />
-                </div>
-            </div>
+        <div class="mt-10">
+          <div class="send">
+            <input
+              class="baseline href w-full rounded-lg bg-primaryColor p-3 px-6 text-white duration-200 ease-out hover:bg-slate-400"
+              type="submit" name="submit" value="Send message" id="submit" />
+          </div>
         </div>
-</section>
- 
-  </body>
+      </form>
+    </div>
+  </section>
+</body>
+
 </html>
