@@ -1,73 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" sizes="any" />
-    <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/resume.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" sizes="any" />
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    <title>dweiden</title>
-  </head>
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/resume.css" />
+  <link rel="stylesheet" href="/css/main.css" />
 
-  <body>
+  <title>dweiden</title>
+</head>
 
-<!-- NAVIGATION -->
+<body>
 
-<nav class="relative container mx-auto py-6 px-20">
-  <div class="flex items-center justify-between">
-    <div class="pt-2">
-      <img src="../assets/img/logo.svg" alt="" />
+  <!-- NAVIGATION -->
+
+  <nav class="relative container mx-auto py-6 px-20">
+    <div class="flex items-center justify-between">
+      <div class="pt-2">
+        <a href="../index.html"><img src="../assets/img/logo.svg" alt="" /></a>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="../index.html" class="text-primaryColor hover:text-slate-500">Home</a>
+        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
+        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
+      </div>
+
+      <a href="../contact.html"
+        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
+
+      <!-- HAMBURGER ICON -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
 
-    <div class="hidden md:flex space-x-8">
-      <a href="../index.html" class="text-primaryColor hover:text-slate-500"
-        >Home</a
-      >
-      <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500"
-        >Portfolio</a
-      >
-      <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500"
-        >Resume</a
-      >
+    <!-- MOBILE MENU -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#portfolio">Portfolio</a>
+        <a href="../index.html#resume">Resume</a>
+      </div>
     </div>
+  </nav>
 
-    <a
-      href="../contact.html"
-      class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href focus:scale-95 transition-all duration-200 ease-out after:content-['_↗']"
-      >Contact</a
-    >
+  <!-- SECTION: HERO -->
 
-    <!-- HAMBURGER ICON -->
-    <button
-      id="menu-btn"
-      class="block hamburger md:hidden focus:outline-none"
-    >
-      <span class="hamburger-top"></span>
-      <span class="hamburger-middle"></span>
-      <span class="hamburger-bottom"></span>
-    </button>
-  </div>
+  <section class="flex justify-center">
+    <div class="container">
+      <div class="mx-auto text-center ">
+        <p class="mt-10 font-semibold text-blue-400">24 NOVEMBER 2022</p>
+        <h2 class="my-8 text-4xl font-semibold text-customBlack">
+          Web Design: Körnig
+        </h2>
+        <p class="text-lg font-light text-label">
+          Design Implementation for local Organic Supermarket "Körnig"
+        </p>
+      </div>
+      <img class="mt-10" src="../assets/img/koernig/heroKoernig.png" alt="" />
+  </section>
 
-  <!-- MOBILE MENU -->
-  <div class="md:hidden">
-    <div
-      id="menu"
-      class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-    >
-      <a href="../index.html">Home</a>
-      <a href="../index.html#portfolio">Portfolio</a>
-      <a href="../index.html#resume">Resume</a>
+
+  <!-- SECTION: ARTICLE -->
+
+  <section class="flex justify-center w-full max-w-2xl mx-auto">
+    <div class="container px-4 mx-auto ">
+      <article class="my-8">
+
+        <h1 class="text-3xl font-medium text-customBlack ">Introduction</h1>
+
+        <p class="py-8 text-customBlack">In today's competitive market, having a strong online presence is vital for
+          businesses to thrive. The Körnig Organic Supermarket recognized this need and sought to create a website that
+          would not only showcase their brand values and product offerings but also provide an engaging and seamless
+          experience for users. This project report outlines the process of designing and implementing the Körnig
+          Organic Supermarket website, focusing on the challenges faced, the tools used, and the successful results
+          achieved.</p>
+        <img class="rounded-lg" src="../assets/img/koernig/showcaseKoernig.png" alt="">
+        <p class="py-8 text-customBlack">
+          The project's goal was to develop and implement an engaging design for the Körnig Organic Supermarket website,
+          which functions on various devices and visually presents the brand. Figma was used for the design, while HTML,
+          CSS, and JavaScript were employed for implementation. Despite challenges, an aesthetically appealing,
+          user-friendly, and search engine-optimized website was created.
+        </p>
+
+        <h1 class="text-3xl font-medium text-customBlack">Software and tools</h1>
+
+        <p class="py-8 text-customBlack">
+          The design process involved analyzing user needs, creating a user-friendly interface, and testing the design
+          with real users. The app design featured features like plant and seed selection, soil preparation, and
+          watering and fertilizing reminders. The use of Figma allowed efficient prototyping and testing of the app
+          design.
+        </p>
+        <div class=" p-5 bg-resume rounded-lg shadow-lg">
+          <h4 class="text-3xl font-medium  text-primaryColor">
+            Conclusion
+          </h4>
+
+          <p class="py-6 text-customBlack">
+            Overall, the design process for the Körnig Organic Supermarket website was a rewarding and successful
+            endeavor. Utilizing Figma as the design tool proved to be highly effective, allowing for the creation of a
+            visually appealing, user-friendly website. By overcoming the challenges of
+            learning Figma and adhering to interface guidelines, the final result is a captivating online presence that
+            showcases the Körnig brand and offers an engaging experience for users across various platforms. This
+            project demonstrates the importance of a well-designed website in today's digital landscape and the impact
+            it can have on a business's success.
+          </p>
+        </div>
+
+      </article>
     </div>
-  </div>
-</nav>
+  </section>
 
-  
-    
-  </body>
+
+</body>
+
 </html>
