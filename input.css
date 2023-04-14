@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .card {
-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .card::before {
