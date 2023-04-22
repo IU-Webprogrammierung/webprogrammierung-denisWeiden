@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/img/favicon.svg"
+      sizes="any"
+    />
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" sizes="any" />
-  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
-  <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/main.css" />
+    <title>dweiden</title>
+  </head>
 
-  <title>dweiden</title>
-</head>
+  <body>
+    <!-- NAVIGATION -->
 
-<body>
-
-  <!-- NAVIGATION -->
-
-  <nav class="relative container mx-auto py-6 px-20">
-    <div class="flex items-center justify-between">
-      <div class="pt-2">
-        <a href="../index.html"><img src="../assets/img/logo.svg" alt="" /></a>
-      </div>
-
-      <div class="hidden md:flex space-x-8">
-        <a href="../index.html" class="text-primaryColor hover:text-slate-500">Home</a>
-        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
-        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
-      </div>
-
-      <a href="../contact.html"
-        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
-
-      <!-- HAMBURGER ICON -->
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <div class="md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="../index.html">Home</a>
-        <a href="../index.html#portfolio">Portfolio</a>
-        <a href="../index.html#resume">Resume</a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- SECTION: HERO -->
-
-  <section class="flex justify-center">
-    <div class="container">
-      <div class="mx-auto text-center ">
-        <p class="mt-10 font-semibold text-blue-400">09 APRIL 2023</p>
-        <h2 class="my-8 text-4xl font-semibold text-customBlack">
-          App Design: Gardeneer
-        </h2>
-        <p class="text-lg font-light text-label">
-          Designing a User-Friendly Urban Gardening App for Mobile Devices.
-        </p>
-      </div>
-      <img class="mt-10" src="../assets/img/gardeneer/heroGardeneer.png" alt="" />
-  </section>
-
-
-  <!-- SECTION: ARTICLE -->
-
-  <section class="flex justify-center w-full max-w-2xl mx-auto">
-    <div class="container px-4 mx-auto ">
-      <article class="my-8">
-
-        <h1 class="text-3xl font-medium text-customBlack ">Introduction</h1>
-
-        <p class="py-8 text-customBlack">The design of a mobile app plays a crucial role in the success of the product,
-          especially when it comes to user engagement and satisfaction. In this project, the goal was to create a mobile
-          app design for an urban gardening app using Figma, a popular design tool. The app aimed to provide urban
-          gardeners with easy-to-use features to grow plants and vegetables in small spaces.</p>
-        <img class="" src="../assets/img/gardeneer/showcaseGardeneer.png" alt="">
-        <p class="py-8 text-customBlack">
-          To develop the design I went through a design process in Figma. I
-          analyzed the requirements for the App, created wireframes, set up a flowchart, and adapted all to the mobile
-          design.
-        </p>
-
-        <h1 class="text-3xl font-medium text-customBlack">Software and tools</h1>
-
-        <p class="py-8 text-customBlack">
-          The design process involved analyzing user needs, creating a user-friendly interface, and testing the design
-          with real users. The app design featured features like plant and seed selection, soil preparation, and
-          watering and fertilizing reminders. The use of Figma allowed efficient prototyping and testing of the app
-          design.
-        </p>
-        <div class=" p-5 bg-resume rounded-lg shadow-lg">
-          <h4 class="text-3xl font-medium  text-primaryColor">
-            Conclusion
-          </h4>
-
-          <p class="py-6 text-customBlack">
-            The design of a mobile app for an urban gardening app requires a user-centered design approach to ensure
-            ease of use and functionality. By using Figma to design the app, we were able to create a user-friendly and
-            intuitive interface that met the needs of urban gardeners.
-          </p>
+    <nav class="container relative mx-auto px-20 py-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <a href="../index.html"
+            ><img src="../assets/img/logo.svg" alt=""
+          /></a>
         </div>
 
-      </article>
-    </div>
-  </section>
+        <div class="hidden space-x-8 md:flex">
+          <a href="../index.html" class="text-primaryColor hover:text-slate-500"
+            >Home</a
+          >
+          <a
+            href="../index.html#portfolio"
+            class="text-primaryColor hover:text-slate-500"
+            >Portfolio</a
+          >
+          <a
+            href="../index.html#resume"
+            class="text-primaryColor hover:text-slate-500"
+            >Resume</a
+          >
+        </div>
 
-</body>
+        <a
+          href="../contact.html"
+          class="baseline href rounded-lg bg-primaryColor p-3 px-6 text-white duration-200 ease-out after:content-['_↗'] hover:bg-slate-500"
+          >Contact</a
+        >
 
+        <!-- HAMBURGER ICON -->
+        <button
+          id="menu-btn"
+          class="hamburger block focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
+        >
+          <a href="../index.html">Home</a>
+          <a href="../index.html#portfolio">Portfolio</a>
+          <a href="../index.html#resume">Resume</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION: HERO -->
+
+    <section class="flex justify-center">
+      <div class="container">
+        <div class="mx-auto text-center">
+          <p class="mt-10 font-semibold text-blue-400">09 APRIL 2023</p>
+          <h2 class="my-8 text-4xl font-semibold text-customBlack">
+            App Design: Gardeneer
+          </h2>
+          <p class="text-lg font-light text-label">
+            Designing a User-Friendly Urban Gardening App for Mobile Devices.
+          </p>
+        </div>
+        <img
+          class="mt-10"
+          src="../assets/img/gardeneer/heroGardeneer.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- SECTION: ARTICLE -->
+
+    <section class="mx-auto flex w-full max-w-2xl justify-center">
+      <div class="container mx-auto px-4">
+        <article class="my-8">
+          <h1 class="text-3xl font-medium text-customBlack">Introduction</h1>
+
+          <p class="py-8 text-customBlack">
+            The design of a mobile app plays a crucial role in the success of
+            the product, especially when it comes to user engagement and
+            satisfaction. In this project, the goal was to create a mobile app
+            design for an urban gardening app using Figma, a popular design
+            tool. The app aimed to provide urban gardeners with easy-to-use
+            features to grow plants and vegetables in small spaces.
+          </p>
+          <img
+            class=""
+            src="../assets/img/gardeneer/showcaseGardeneer.png"
+            alt=""
+          />
+          <p class="py-8 text-customBlack">
+            To develop the design I went through a design process in Figma. I
+            analyzed the requirements for the App, created wireframes, set up a
+            flowchart, and adapted all to the mobile design.
+          </p>
+
+          <h1 class="text-3xl font-medium text-customBlack">
+            Software and tools
+          </h1>
+
+          <p class="py-8 text-customBlack">
+            The design process involved analyzing user needs, creating a
+            user-friendly interface, and testing the design with real users. The
+            app design featured features like plant and seed selection, soil
+            preparation, and watering and fertilizing reminders. The use of
+            Figma allowed efficient prototyping and testing of the app design.
+          </p>
+          <div class="rounded-lg bg-resume p-5 shadow-lg">
+            <h4 class="text-3xl font-medium text-primaryColor">Conclusion</h4>
+
+            <p class="py-6 text-customBlack">
+              The design of a mobile app for an urban gardening app requires a
+              user-centered design approach to ensure ease of use and
+              functionality. By using Figma to design the app, we were able to
+              create a user-friendly and intuitive interface that met the needs
+              of urban gardeners.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

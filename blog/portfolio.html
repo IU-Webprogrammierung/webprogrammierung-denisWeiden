@@ -1,127 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/img/favicon.svg"
+      sizes="any"
+    />
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" sizes="any" />
-  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
-  <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/main.css" />
+    <title>dweiden</title>
+  </head>
 
-  <title>dweiden</title>
-</head>
+  <body>
+    <!-- NAVIGATION -->
 
-<body>
-
-  <!-- NAVIGATION -->
-
-  <nav class="relative container mx-auto py-6 px-20">
-    <div class="flex items-center justify-between">
-      <div class="pt-2">
-        <a href="../index.html"><img src="../assets/img/logo.svg" alt="" /></a>
-      </div>
-
-      <div class="hidden md:flex space-x-8">
-        <a href="../index.html" class="text-primaryColor hover:text-slate-500">Home</a>
-        <a href="../index.html#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
-        <a href="../index.html#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
-      </div>
-
-      <a href="../contact.html"
-        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
-
-      <!-- HAMBURGER ICON -->
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <div class="md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="../index.html">Home</a>
-        <a href="../index.html#portfolio">Portfolio</a>
-        <a href="../index.html#resume">Resume</a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- SECTION: HERO -->
-
-  <section class="flex justify-center">
-    <div class="container">
-      <div class="mx-auto text-center ">
-        <p class="mt-10 font-semibold text-blue-400">09 APRIL 2023</p>
-        <h2 class="my-8 text-4xl font-semibold text-customBlack">
-          Portfolio
-        </h2>
-        <p class="text-lg font-light text-label">
-          Designing a Professional Portfolio Website using Figma, VS Code and CSS Frameworks.
-        </p>
-      </div>
-      <img class="mt-10" src="../assets/img/portfolio/heroPortfolio.png" alt="" />
-  </section>
-
-
-  <!-- SECTION: ARTICLE -->
-
-  <section class="flex justify-center w-full max-w-2xl mx-auto">
-    <div class="container px-4 mx-auto ">
-      <article class="my-8">
-
-        <h1 class="text-3xl font-medium text-customBlack ">Introduction</h1>
-
-        <p class="py-8 text-customBlack">Creating a portfolio website is an important step for any professional or
-          aspiring developer to showcase themselves and their work online. It is a place where potential clients or
-          employers can learn about skills, experiences, and projects. When implementing such a website, various
-          factors need to be considered, such as design, navigation, and technical implementation. The goal of this
-          project was to create a portfolio website that takes all of these important aspects into account and provides
-          a professional presentation of the work.</p>
-        <img class="rounded-lg" src="../assets/img/portfolio/showcasePortfolio.png" alt="">
-        <p class="py-8 text-customBlack">
-          To implement the portfolio website with different breakpoints, I went through a design process in Figma. I
-          analyzed the requirements for the website, created the desktop design, set breakpoints, and adapted the design
-          for the different breakpoints. This process ensured that my website is optimally displayed on any device.
-        </p>
-
-        <h1 class="text-3xl font-medium text-customBlack">Software and tools</h1>
-
-        <p class="py-8 text-customBlack">
-          Various tools and software were used to implement the portfolio website. Visual Studio Code was used as the
-          code editor, which offers many useful features for web development. The Tailwind CSS framework was used to
-          create a custom design quickly and effectively. Figma was a useful tool for designing the website, and Git
-          allowed for efficient management of code changes and integration of changes from other developers. Using these
-          tools, the portfolio website was implemented quickly and effectively.
-        </p>
-        <div class=" p-5 bg-resume rounded-lg shadow-lg">
-          <h4 class="text-3xl font-medium  text-primaryColor">
-            Conclusion
-          </h4>
-
-          <p class="py-6 text-customBlack">
-            The implementation of a portfolio website requires careful consideration of various factors,
-            such as design, navigation, and technical implementation. The use of tools such as Visual Studio Code, the
-            Tailwind CSS Framework, Figma, and Git can greatly facilitate the process. When designing a website with
-            different breakpoints, it is important to analyze the requirements, create a style guide, design for the
-            desktop, set breakpoints, and adapt the design for each breakpoint. By following this process, a
-            professional and user-friendly portfolio website can be created that showcases the developer's skills,
-            experiences, and projects effectively.
-          </p>
+    <nav class="container relative mx-auto px-20 py-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <a href="../index.html"
+            ><img src="../assets/img/logo.svg" alt=""
+          /></a>
         </div>
 
-      </article>
-    </div>
-  </section>
+        <div class="hidden space-x-8 md:flex">
+          <a href="../index.html" class="text-primaryColor hover:text-slate-500"
+            >Home</a
+          >
+          <a
+            href="../index.html#portfolio"
+            class="text-primaryColor hover:text-slate-500"
+            >Portfolio</a
+          >
+          <a
+            href="../index.html#resume"
+            class="text-primaryColor hover:text-slate-500"
+            >Resume</a
+          >
+        </div>
 
-</body>
+        <a
+          href="../contact.html"
+          class="baseline href rounded-lg bg-primaryColor p-3 px-6 text-white duration-200 ease-out after:content-['_↗'] hover:bg-slate-500"
+          >Contact</a
+        >
 
+        <!-- HAMBURGER ICON -->
+        <button
+          id="menu-btn"
+          class="hamburger block focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
+        >
+          <a href="../index.html">Home</a>
+          <a href="../index.html#portfolio">Portfolio</a>
+          <a href="../index.html#resume">Resume</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION: HERO -->
+
+    <section class="flex justify-center">
+      <div class="container">
+        <div class="mx-auto text-center">
+          <p class="mt-10 font-semibold text-blue-400">09 APRIL 2023</p>
+          <h2 class="my-8 text-4xl font-semibold text-customBlack">
+            Portfolio
+          </h2>
+          <p class="text-lg font-light text-label">
+            Designing a Professional Portfolio Website using Figma, VS Code and
+            CSS Frameworks.
+          </p>
+        </div>
+        <img
+          class="mt-10"
+          src="../assets/img/portfolio/heroPortfolio.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- SECTION: ARTICLE -->
+
+    <section class="mx-auto flex w-full max-w-2xl justify-center">
+      <div class="container mx-auto px-4">
+        <article class="my-8">
+          <h1 class="text-3xl font-medium text-customBlack">Introduction</h1>
+
+          <p class="py-8 text-customBlack">
+            Creating a portfolio website is an important step for any
+            professional or aspiring developer to showcase themselves and their
+            work online. It is a place where potential clients or employers can
+            learn about skills, experiences, and projects. When implementing
+            such a website, various factors need to be considered, such as
+            design, navigation, and technical implementation. The goal of this
+            project was to create a portfolio website that takes all of these
+            important aspects into account and provides a professional
+            presentation of the work.
+          </p>
+          <img
+            class="rounded-lg"
+            src="../assets/img/portfolio/showcasePortfolio.png"
+            alt=""
+          />
+          <p class="py-8 text-customBlack">
+            To implement the portfolio website with different breakpoints, I
+            went through a design process in Figma. I analyzed the requirements
+            for the website, created the desktop design, set breakpoints, and
+            adapted the design for the different breakpoints. This process
+            ensured that my website is optimally displayed on any device.
+          </p>
+
+          <h1 class="text-3xl font-medium text-customBlack">
+            Software and tools
+          </h1>
+
+          <p class="py-8 text-customBlack">
+            Various tools and software were used to implement the portfolio
+            website. Visual Studio Code was used as the code editor, which
+            offers many useful features for web development. The Tailwind CSS
+            framework was used to create a custom design quickly and
+            effectively. Figma was a useful tool for designing the website, and
+            Git allowed for efficient management of code changes and integration
+            of changes from other developers. Using these tools, the portfolio
+            website was implemented quickly and effectively.
+          </p>
+          <div class="rounded-lg bg-resume p-5 shadow-lg">
+            <h4 class="text-3xl font-medium text-primaryColor">Conclusion</h4>
+
+            <p class="py-6 text-customBlack">
+              The implementation of a portfolio website requires careful
+              consideration of various factors, such as design, navigation, and
+              technical implementation. The use of tools such as Visual Studio
+              Code, the Tailwind CSS Framework, Figma, and Git can greatly
+              facilitate the process. When designing a website with different
+              breakpoints, it is important to analyze the requirements, create a
+              style guide, design for the desktop, set breakpoints, and adapt
+              the design for each breakpoint. By following this process, a
+              professional and user-friendly portfolio website can be created
+              that showcases the developer's skills, experiences, and projects
+              effectively.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>
