@@ -10,80 +10,164 @@
   <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-  <!--     <link rel="stylesheet" href="/css/grid.css" /> -->
-  <!--     <link rel="stylesheet" href="/css/styles.css" /> -->
-  <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/resume.css" />
   <link rel="stylesheet" href="/css/main.css" />
 
   <title>dweiden</title>
 </head>
 
 <body>
-  <!-- NAVIGATION -->
 
-  <nav class="relative container mx-auto py-6 px-20">
-    <div class="flex items-center justify-between">
-      <div class="pt-2">
-        <a href="../index.html"><img src="assets/img/logo.svg" alt="" /></a>
+  <!-- NAVIIGATION -->
+
+  <header class="fixed  bg-white w-full z-20  border-b border-primaryColor/10">
+    <nav class="max-w-screen-xl md:px-20 flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="flex ">
+        <a href="../index.html" class="">
+          <img class="w-auto" src="../assets/img/logo.svg">
+        </a>
       </div>
+      <div class="flex md:hidden">
 
-      <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-primaryColor hover:text-slate-500">Home</a>
-        <a href="#portfolio" class="text-primaryColor hover:text-slate-500">Portfolio</a>
-        <a href="#resume" class="text-primaryColor hover:text-slate-500">Resume</a>
+        <!-- BURGER BUTTON -->
+
+        <button type="button" class="inline-flex items-center justify-center rounded-md p-2.5 text-primaryColor"
+          id="buttonOpen">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
       </div>
+      <div class="hidden md:flex md:gap-x-8 z-30">
+        <a href="../index.html" class="block py-2 pl-3 pr-4 text-primaryColor hover:text-slate-500">Home</a>
+        <div class="relative">
+          <div class="group inline-block relative">
+            <a href="#portfolio"></a>
+            <button
+              class="bg-white text-primaryColor hover:text-slate-500 py-2 pl-3 pr-4 rounded inline-flex items-center">
+              <span class="mr-1">Portfolio</span>
 
-      <a href="contact.html"
-        class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
-
-      <!-- HAMBURGER ICON -->
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </button>
+            <ul class="absolute hidden text-primaryColor pt-1 group-hover:block w-48">
+              <li class="">
+                <a class="bg-white rounded-t  hover:bg-gray-200 py-2 pl-3 pr-4 block"
+                  href="../blog/portfolio.html">Personal Portfolio</a>
+              </li>
+              <li class="">
+                <a class="w-full bg-white hover:bg-gray-200 py-2 pl-3 pr-4 block" href="../blog/gardeneer.html">App
+                  Design: Gardeneer</a>
+              </li>
+              <li class="">
+                <a class=" rounded-b bg-white hover:bg-gray-200 py-2 pl-3 pr-4 block" href="../blog/koernig.html">Web
+                  Design: Körnig</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#resume" class="block py-2 pl-3 pr-4 text-primaryColor hover:text-slate-500">Resume</a>
+      </div>
+      <div class="hidden md:flex md:justify-end">
+        <a href="../contact.html"
+          class="block p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 duration-200 ease-out after:content-['_↗']">Contact</a>
+      </div>
+    </nav>
 
     <!-- MOBILE MENU -->
-    <div class="md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="index.html">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#resume">Resume</a>
+
+    <div class=" hidden fixed inset-y-0 right-0 z-50 w-screen  bg-white p-4 sm:ring-1 sm:ring-gray-900/10" id="menu">
+      <div class="flex items-center justify-between">
+        <a href="../index.html" class="">
+          <img class="w-auto" src="../assets/img/logo.svg" alt="">
+        </a>
+
+        <button type="button" class="items-center justify-center rounded-md p-2.5 text-gray-700" id="buttonClose">
+          <!-- CLOSE BUTTON -->
+
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-    </div>
-  </nav>
+
+      <div class="mt-6" id="navbar">
+        <div class="my-6 divide-y divide-primaryColor/10">
+          <div class="py-6">
+            <a href="../index.html"
+              class=" rounded-lg px-4 py-2 text-primaryColor hover:text-slate-500 hover:bg-gray-100 w-auto">Home</a>
+            <div class="relative my-4">
+
+              <div class="group inline-block relative">
+                <a href="#portfolio">
+                  <button
+                    class="inline-flex items-center rounded px-4 py-2 text-primaryColor hover:text-slate-500 hover:bg-gray-100 w-auto">
+                    <span class="mr-1.5">Portfolio</span>
+
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </button>
+                </a>
+                <ul class="relative hidden text-primaryColor group-hover:block w-auto space-y-2 my-2">
+                  <li class="ml-4">
+                    <a class="rounded bg-white hover:bg-gray-200 px-4 py-2 block "
+                      href="../blog/portfolio.html">Personal Portfolio</a>
+                  </li>
+                  <li class="ml-4">
+                    <a class="rounded bg-white hover:bg-gray-200 px-4 py-2 block " href="../blog/gardeneer.html">App
+                      Design: Gardeneer</a>
+                  </li>
+                  <li class="ml-4">
+                    <a class="rounded bg-white hover:bg-gray-200 px-4 py-2 block " href="../blog/koernig.html">Web
+                      Design: Körnig</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <a href="#resume"
+              class="rounded-lg px-4 py-2 text-primaryColor hover:text-slate-500 hover:bg-gray-100 w-auto">Resume</a>
+          </div>
+          <div class="py-6 flex flex-col justify-start">
+            <a href="../contact.html"
+              class="w-fit p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
 
   <!-- SECTION: HERO -->
 
   <section id="hero">
-    <div class="container flex flex-col items-center mx-auto pt-20 mb-10 md:space-y-0 md:flex-row xs:px-0 md:px-20">
+    <div class="container flex flex-col items-center mx-auto pt-32 mb-10 md:space-y-0 md:flex-row xs:px-0 md:px-20">
       <!-- LEFT ITEM-->
-      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md text-4xl font-bold text-center text-customBlack md:text-5xl md:text-left">
-          👋 Hey there, it’s Denis.
+      <div class="flex flex-col space-y-8 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center text-customBlack lg:text-5xl md:text-left">
+          👋 Hey there, <br>
+          it’s Denis.
         </h1>
-        <p class="text-primaryColor max-w-sm text-center md:text-left">
+        <p class="text-lg md:text-xl text-primaryColor max-w-sm text-center md:text-left">
           UX Design Student & Genius at 
         </p>
         <div class="flex justify-center md:justify-start">
-          <a href="contact.html"
+          <a href="../contact.html"
             class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Contact</a>
         </div>
       </div>
 
       <!-- RIGHT ITEM: IMAGE -->
       <div class="md:w-1/2">
-        <img src="assets/img/portrait.png" alt="" />
+        <img src="../assets/img/portrait.png" alt="" />
       </div>
     </div>
   </section>
 
+
   <!-- SECTION: PORTFOLIO -->
 
-  <section class="" id="portfolio">
+  <section class="lg:flex lg:flex-col lg:h-screen lg:justify-center lg:items-center" id="portfolio">
     <div class="container mx-auto xs:px-0 md:px-20">
       <h2 class="text-3xl text-left text-customBlack mb-11 md:text-4xl">Portfolio</h2>
     </div>
@@ -94,8 +178,8 @@
 
         <div class="card">
           <div class="flex flex-col p-5">
-            <div class="rounded-lg overflow-hidden h-60">
-              <img class="w-full  h-full" src="../assets/img/portfolio/thumbnailPortfolio.png" alt="" />
+            <div class="rounded-lg overflow-hidden ">
+              <img class="w-full  " src="../assets/img/portfolio/thumbnailPortfolio.png" alt="" />
             </div>
             <p class="mt-4 font-semibold text-orange-400 text-sm rounded-full">
               Development
@@ -113,8 +197,8 @@
 
         <div class="card">
           <div class="flex flex-col p-5">
-            <div class="rounded-lg overflow-hidden h-60">
-              <img class="w-fit h-fit" src="../assets/img/gardeneer/thumbnailGardeneer.png" alt="" />
+            <div class="rounded-lg overflow-hidden ">
+              <img class="w-full " src="../assets/img/gardeneer/thumbnailGardeneer.png" alt="" />
             </div>
             <p class="mt-4 font-semibold text-blue-400 text-sm rounded-full">
               Design
@@ -153,7 +237,7 @@
 
 
   <!-- SECTION: RESUME -->
-  <section class="" id="resume">
+  <section class="lg:flex lg:flex-col lg:h-screen lg:justify-center lg:items-center" id="resume">
     <div class="container mx-auto xs:px-0 md:px-20">
       <h2 class="text-3xl text-left text-customBlack mb-11 md:text-4xl">Resume</h2>
     </div>
@@ -250,10 +334,10 @@
           </h4>
           <div class="pb-11">
             <ul class="inline-flex gap-8 text-customBlack">
-              <li class=""><img src="assets/icons/figma.svg" class="" /></li>
-              <li class=""><img src="assets/icons/notion.svg" class="" /></li>
-              <li class=""><img src="assets/icons/slack.svg" class="" /></li>
-              <li class=""><img src="assets/icons/vscode.svg" class="" /></li>
+              <li class=""><img src="../assets/icons/figma.svg" class="" /></li>
+              <li class=""><img src="../assets/icons/notion.svg" class="" /></li>
+              <li class=""><img src="../assets/icons/slack.svg" class="" /></li>
+              <li class=""><img src="../assets/icons/vscode.svg" class="" /></li>
             </ul>
           </div>
         </div>
@@ -262,7 +346,7 @@
     </div>
   </section>
 
-  <script src="js/hamburger.js" />
+  <script src="../js/hamburger.js" />
 </body>
 
 </html>
