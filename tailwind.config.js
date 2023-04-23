@@ -8,6 +8,9 @@ module.exports = {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
+    variants: {
+      display: ["group-hover"],
+    },
     screens: {
       xs: "400px",
       sm: "480px",
