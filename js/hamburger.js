@@ -1,6 +1,11 @@
-const btn = document.getElementById('menu-btn')
-const nav = document.getElementById('menu')
+const menu = document.getElementById("menu");
+const buttonOpen = document.getElementById("buttonOpen");
+const buttonClose = document.getElementById("buttonClose");
 
-btn.addEventListener('click', () => {
-    btn.classList.toggle('open')
-})
+buttonOpen.addEventListener("click", function () {
+  menu.classList.remove("hidden");
+});
+
+buttonClose.addEventListener("click", function () {
+  menu.classList.add("hidden");
+});
