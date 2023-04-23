@@ -10,8 +10,6 @@
   <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-  <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/resume.css" />
   <link rel="stylesheet" href="/css/main.css" />
 
   <title>dweiden</title>
@@ -141,29 +139,35 @@
   </header>
 
 
-  <!-- SECTION: CONTENT -->
+  <!-- CONTENT -->
 
-  <section id="content">
-    <div class="container mx-auto mb-10 flex flex-col items-center pt-20 xs:px-0 md:flex-row md:space-y-0 md:px-20">
+  <section>
+    <div
+      class="container flex flex-col items-center mx-auto py-40 md:space-y-0 md:flex-row xs:px-0 md:px-20 gap-12 lg:gap-0">
       <!-- LEFT ITEM-->
-      <div class="flex flex-col space-y-4 md:w-1/2 md:text-left">
-        <p class="text-center font-semibold text-blue-400 md:text-left">
-          404 error
-        </p>
-        <h1 class="max-w-md text-center text-4xl font-bold text-customBlack md:text-left md:text-5xl">
+      <div class="flex flex-col space-y-8 md:w-1/2">
+        <p class="text-lg md:text-xl max-w-sm text-center md:text-left text-blue-400">404 error</p>
+        <h1 class="max-w-md text-4xl font-semibold text-center text-customBlack lg:text-5xl md:text-left">
           Page not found
         </h1>
-        <p class="max-w-sm text-center text-primaryColor md:text-left">
+        <p class="text-lg md:text-xl text-primaryColor max-w-sm text-center md:text-left">
           Sorry, the page you are looking for doesn't exist.
         </p>
+        <div class="flex justify-center md:justify-start">
+          <a href="../index.html"
+            class="p-3 px-6 text-white bg-primaryColor rounded-lg baseline hover:bg-slate-500 href duration-200 ease-out after:content-['_↗']">Home</a>
+        </div>
       </div>
 
       <!-- RIGHT ITEM: IMAGE -->
-      <div class="md:w-1/2">
-        <img class="rounded-lg" src="../assets/img/404.png" alt="" />
+      <div class="flex justify-end md:w-1/2">
+        <img src="../assets/img/404.png" alt="" />
       </div>
     </div>
   </section>
+
+
+  <script src="../js/hamburger.js" />
 </body>
 
 </html>
