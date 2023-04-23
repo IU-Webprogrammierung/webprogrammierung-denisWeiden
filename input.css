@@ -3,128 +3,125 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .heroGradient {
-    background-color: #fff;
-    background-image:
-        radial-gradient(at 40% 20%, rgba(255, 184, 122, .558) 0, transparent 40%),
-        radial-gradient(at 80% 0, rgba(31, 221, 255, .725) 0, transparent 30%),
-        radial-gradient(at 0 50%, #ffdbde 0, transparent 40%),
-        radial-gradient(at 68% 50%, rgba(255, 133, 174, .583) 0, transparent 40%),
-        radial-gradient(at 0 100%, #fff 0, transparent 40%),
-        radial-gradient(at 80% 100%, #fff 0, transparent 40%),
-        radial-gradient(at 0 0, rgba(255, 202, 217, .738) 0, transparent 40%);
+  background-color: #fff;
+  background-image: radial-gradient(at 40% 20%,
+      rgba(255, 184, 122, 0.558) 0,
+      transparent 40%),
+    radial-gradient(at 80% 0, rgba(31, 221, 255, 0.725) 0, transparent 30%),
+    radial-gradient(at 0 50%, #ffdbde 0, transparent 40%),
+    radial-gradient(at 68% 50%, rgba(255, 133, 174, 0.583) 0, transparent 40%),
+    radial-gradient(at 0 100%, #fff 0, transparent 40%),
+    radial-gradient(at 80% 100%, #fff 0, transparent 40%),
+    radial-gradient(at 0 0, rgba(255, 202, 217, 0.738) 0, transparent 40%);
 }
 
 #hero {
-    position: relative;
-    background-color: #fff;
-    background-image:
-        radial-gradient(at 40% 20%, rgba(255, 184, 122, .558) 0, transparent 40%),
-        radial-gradient(at 80% 0, rgba(31, 221, 255, .725) 0, transparent 30%),
-        radial-gradient(at 0 50%, #ffdbde 0, transparent 40%),
-        radial-gradient(at 68% 50%, rgba(255, 133, 174, .583) 0, transparent 40%),
-        radial-gradient(at 0 100%, #fff 0, transparent 40%),
-        radial-gradient(at 80% 100%, #fff 0, transparent 40%),
-        radial-gradient(at 0 0, rgba(255, 202, 217, .738) 0, transparent 40%);
+  position: relative;
+  background-color: #fff;
+  background-image: radial-gradient(at 40% 20%,
+      rgba(255, 184, 122, 0.558) 0,
+      transparent 40%),
+    radial-gradient(at 80% 0, rgba(31, 221, 255, 0.725) 0, transparent 30%),
+    radial-gradient(at 0 50%, #ffdbde 0, transparent 40%),
+    radial-gradient(at 68% 50%, rgba(255, 133, 174, 0.583) 0, transparent 40%),
+    radial-gradient(at 0 100%, #fff 0, transparent 40%),
+    radial-gradient(at 80% 100%, #fff 0, transparent 40%),
+    radial-gradient(at 0 0, rgba(255, 202, 217, 0.738) 0, transparent 40%);
 }
 
 @media (max-width: 768px) {
-    #hero .heroGradient {
-        overflow: hidden;
-    }
+  #hero .heroGradient {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 1400px) {
-    #hero .heroGradient {
-        right: -5%;
-    }
+  #hero .heroGradient {
+    right: -5%;
+  }
 }
 
 @media (max-width: 992px) {
-    #hero .heroGradient {
-        right: 10%;
-        top: -30%;
-    }
-
+  #hero .heroGradient {
+    right: 10%;
+    top: -30%;
+  }
 }
 
 @media (max-width: 768px) {
-    #hero .heroGradient {
-        right: -18%;
-        top: 30%;
-    }
+  #hero .heroGradient {
+    right: -18%;
+    top: 30%;
+  }
 }
 
-
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background: black;
-    transform: rotate(0);
-    transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
-    transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
-
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-    transform: rotate(45deg);
-    transform: translateY(6px) translate(6px);
-
+  transform: rotate(45deg);
+  transform: translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-    display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-    transform: rotate(-45deg);
-    transform: translateY(6px) translate(-6px);
-
+  transform: rotate(-45deg);
+  transform: translateY(6px) translate(-6px);
 }
 
 @layer components {
-    .card {
-        @apply rounded-lg shadow-lg;
-    }
+  .card {
+    @apply rounded-lg shadow-lg;
+  }
 }
 
 .card {
-    transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .card::before {
-    position: relative;
-    transition: 0.3s all ease-in-out;
+  position: relative;
+  transition: 0.3s all ease-in-out;
 }
 
 .card:hover {
-    background: #F2F4F7;
+  background: #f2f4f7;
 }
