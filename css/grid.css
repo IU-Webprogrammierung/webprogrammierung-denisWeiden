@@ -10,7 +10,6 @@
   .container {
     max-width: 398px;
   }
-  
 }
 
 @media (min-width: 576px) {
@@ -60,7 +59,7 @@
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
-  width: 100%
+  width: 100%;
 }
 
 .box {

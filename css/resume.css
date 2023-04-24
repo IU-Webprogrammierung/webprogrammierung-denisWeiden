@@ -1,76 +1,77 @@
 .resume {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
-    background: #F9FAFB;
-    box-shadow: 0px 12px 16px rgba(16, 24, 40, 0.08), 0px 4px 6px rgba(16, 24, 40, 0.03);
-    border-radius: 16px;
+  background: #f9fafb;
+  box-shadow: 0px 12px 16px rgba(16, 24, 40, 0.08),
+    0px 4px 6px rgba(16, 24, 40, 0.03);
+  border-radius: 16px;
 }
 
 .section-title {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .col ul {
-    display: block;
+  display: block;
 }
 
 .col li {
-    margin-bottom: 5px;
-    list-style-type: none;
+  margin-bottom: 5px;
+  list-style-type: none;
 }
 
 .col .row-icons {
-    display: flex;
+  display: flex;
 }
 
 .icon {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .company {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #101828;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
 }
 
 .duration {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .work {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 
-    color: #101828;
+  color: #101828;
 }
 
 .resume .col {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .resume .row {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .resume-title {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 2rem;
 
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    color: #475467;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #475467;
 }
